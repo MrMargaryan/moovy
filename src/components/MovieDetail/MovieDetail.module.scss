@@ -1,0 +1,103 @@
+@import '../../index.scss';
+
+.movieWrapper {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba($color: #000000, $alpha: 0.85);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.poster {
+  align-self: start;
+  order: 1;
+
+  width: 100%;
+
+  @media (min-width: 768px) {
+    order: -1;
+    width: 315px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 385px;
+  }
+}
+
+.metaData {
+  padding: 15px;
+}
+
+.title {
+  margin-bottom: 8px;
+
+  font-size: 35px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin-bottom: 7px;
+
+  font-size: 20px;
+  color: $blue-color;
+  font-weight: 300;
+}
+
+.overview {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.additionalDetails {
+  margin-top: 40px;
+}
+
+.genres {
+  font-size: 20px;
+  color: $blue-color;
+  font-weight: 300;
+}
+
+.prodCompanies {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.releaseDetails {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+
+  @media (min-width: 420px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.releaseDetail {
+  flex: 0 50%;
+
+  margin-bottom: 15px;
+
+  &Title {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+
+  &MetaData {
+    font-size: 25px;
+    color: $blue-color;
+    font-weight: 300;
+  }
+}

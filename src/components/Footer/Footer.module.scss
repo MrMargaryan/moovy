@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  padding: 10px;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.link {
+  color: $blue-color;
+  font-weight: 300;
+}
+
+.moscowLove {
+  padding-top: 3px;
+
+  font-weight: 300;
+}
+
+.heart {
+  color: $blue-color;
+  cursor: pointer;
+}

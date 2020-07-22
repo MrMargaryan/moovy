@@ -1,0 +1,31 @@
+@import '../../index.scss';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  @media (min-width: 544px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.logo {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 4px solid $blue-color;
+  border-radius: 10px;
+
+  font-size: 20px;
+  color: $blue-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: 544px) {
+    margin-right: 160px;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.title {
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px 25px;
+  font-weight: 300;
+  font-size: 18px;
+  transition: all 0.2s;
+
+  &Active {
+    color: #000000;
+    background-color: $blue-color;
+    transition: all 0.2s;
+  }
+}
