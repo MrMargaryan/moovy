@@ -39,7 +39,7 @@ const MovieDetail: FC<MovieDetailPropsType> = ({ match: { params: { id } } }) =>
     document.body.style.backgroundImage = `linear-gradient(
         rgba(0, 0, 0, 0.85) 15%,
         rgba(0, 0, 0, 0.2) 40%,
-        #000 90%
+        #000000 90%
       ),
       url('https://image.tmdb.org/t/p/original${backdrop_path}')`
   }
