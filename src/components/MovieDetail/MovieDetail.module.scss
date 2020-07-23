@@ -1,5 +1,9 @@
 @import '../../index.scss';
 
+.loading {
+  color: $blue-color;
+}
+
 .movieWrapper {
   display: flex;
   flex-direction: column;

@@ -19,7 +19,7 @@ const MovieDetail: FC<MovieDetailPropsType> = ({ match: { params: { id } } }) =>
   }, [id])
 
   if (!movie)
-    return <p>Loading...</p>
+    return <p className={styles.loading}>Loading...</p>
 
   const {
     title,
